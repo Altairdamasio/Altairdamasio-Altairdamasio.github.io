@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemas - Site de Altair Damasio</title>
+    <link rel="stylesheet" href="../style/poemas.css">
+    <script src="../style/poemas.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Site de Altair Damásio</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="poemas.html">Poemas</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li id="logout-link" style="display:none;"><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left-panel">
+                <h2 class="text-poemas">Poemas</h2>
+                <ul id="poema-lista" class="scrollable"></ul>
+                <textarea id="novo-poema" placeholder="Adicionar novo poema" style="display:none;"></textarea>
+                <div class="checkbox-container">
+                    <label id="negrito-titulo-label" style="display:none;"><input type="checkbox" id="negrito-titulo"> Título em negrito</label>
+                </div>
+                <div class="button-container">
+                    <button id="adicionar-poema-btn" onclick="adicionarPoema()" style="display:none;">Adicionar</button>
+                    <div class="checkbox-container">
+                        <label id="excluir-todos-label" style="display:none;"><input type="checkbox" id="excluir-todos"> Excluir todos</label>
+                    </div>
+                    <button id="excluir-todos-btn" onclick="excluirTodos()" style="display:none;">Excluir Todos</button>
+                </div>
+            </div>
+            <div class="right-panel">
+                <h2 class="text-conteudo">Conteúdo do Poema</h2>
+                <div id="poema-conteudo"></div>
+                <button id="editar-poema-btn" onclick="editarPoema()" style="display:none;">Editar</button>
+                <button id="excluir-poema-btn" onclick="excluirPoema()" style="display:none;">Excluir</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

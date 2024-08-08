@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas - Site de Altair Damasio</title>
+    <link rel="stylesheet" href="../style/musicas.css">
+    <script src="../style/musicas.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Site de Altair Damásio</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="poemas.html">Poemas</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li id="logout-link" style="display:none;"><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="text-music">Músicas</h2>
+        <ul id="musica-lista"></ul>
+        <form id="upload-form" enctype="multipart/form-data" style="display:none">
+            <input type="file" id="nova-musica" accept="audio/*">
+            <button id="adicionar-musica" type="button" disabled>Adicionar Música</button>
+        </form>
+    </main>
+</body>
+</html>

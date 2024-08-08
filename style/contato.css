@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bb5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.text-contact {
+    color: #007bb5;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-flex;
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}

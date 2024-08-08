@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    background: url('/img/fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #007bb5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main, section {
+    margin: 20px;
+}
+
+.home {
+    padding: 20px;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.text-home {
+    text-align: center;
+    color:#007bb5 ;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.photo-container {
+    width: 400px;
+    border-radius: 20%;
+    text-align: right;
+
+}
+
+.home-about{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about {
+    text-align: center;
+    background-color: #85caeb;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 30px;
+    font-family: var(--fonte-secundaria);
+}
+
+.presentation {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+textarea, input[type="file"] {
+    display: block;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    /*overflow-y: auto; coloca o botao de rolar*/
+    max-height: 200px;
+    border: 1px solid #007bb5;
+    padding: 10px;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.contact, .social-media {
+    margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+
+    .text-home {
+        font-size: 24px;
+    }
+
+    .about {
+        font-size: 20px;
+    }
+
+    .photo-container {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .presentation {
+        width: 100%;
+    }
+}
+
+
